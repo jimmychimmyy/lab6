@@ -21,6 +21,7 @@ function statusChangeCallback(response) {
 //Add this callback at bottom of facebook.js and add the required functionality in it
 function changeUser(response) {
   //Add code to change name and image
+  $(".facebookLogin").hide();
   document.getElementById("name").innerHTML = response.name;
   document.getElementById("photo").src = response.picture.data.url;
 }
